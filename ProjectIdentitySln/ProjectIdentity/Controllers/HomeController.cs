@@ -12,6 +12,7 @@ namespace ProjectIdentity.Controllers
     {
         public IActionResult Index()
         {
+            TempData["teste"] = "Quero ver no que vai dar.";
             return View();
         }
 
