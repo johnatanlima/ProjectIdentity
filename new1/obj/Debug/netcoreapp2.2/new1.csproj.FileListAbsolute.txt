@@ -30,3 +30,11 @@
 /home/userCentos/NetCore/new1/obj/Debug/netcoreapp2.2/new1.dll
 /home/userCentos/NetCore/new1/obj/Debug/netcoreapp2.2/new1.pdb
 /home/userCentos/NetCore/new1/obj/Debug/netcoreapp2.2/new1.csproj.CopyComplete
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.csprojAssemblyReference.cache
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.csproj.CoreCompileInputs.cache
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.RazorAssemblyInfo.cache
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.RazorAssemblyInfo.cs
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.AssemblyInfoInputs.cache
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.AssemblyInfo.cs
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.dll
+C:\Users\pcosta\Music\AspUdemy\ProjectIdentity\new1\obj\Debug\netcoreapp2.2\new1.pdb
