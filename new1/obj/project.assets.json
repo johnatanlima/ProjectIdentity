@@ -13025,11 +13025,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/userCentos/NetCore/new1/new1.csproj",
+      "projectUniqueName": "/home/userCentos/NetCore/ProjectIdentity/new1/new1.csproj",
       "projectName": "new1",
-      "projectPath": "/home/userCentos/NetCore/new1/new1.csproj",
+      "projectPath": "/home/userCentos/NetCore/ProjectIdentity/new1/new1.csproj",
       "packagesPath": "/home/userCentos/.nuget/packages/",
-      "outputPath": "/home/userCentos/NetCore/new1/obj/",
+      "outputPath": "/home/userCentos/NetCore/ProjectIdentity/new1/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/share/dotnet/sdk/NuGetFallbackFolder"

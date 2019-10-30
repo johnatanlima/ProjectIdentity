@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using new1.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using new1.Models;
 
 namespace new1
 {
@@ -34,9 +35,11 @@ namespace new1
                 options.UseMySql(
                     Configuration.GetConnectionString("myConn")));
 
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<RegistroDbContext>();
+            services.AddDefaultIdentity<Usuario>().AddEntityFrameworkStores<RegistroDbContext>();
+
+            //Por causa das DI que foram feitas no controller Home
+            services.AddScoped<SignInManager<Usuario>,SignInManager<Usuario>>();
+            services.AddScoped<UserManager<Usuario>,UserManager<Usuario>>();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
