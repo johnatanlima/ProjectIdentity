@@ -26,6 +26,8 @@ bld/
 [Bb]in/
 [Oo]bj/
 [Ll]og/
+obj/
+Debug/*
 
 # Visual Studio 2015 cache/options directory
 .vs/
@@ -276,8 +278,6 @@ __pycache__/
 # .NET Core build folders
 /bin
 /obj
-obj/
-bin/
 
 # Common node modules locations
 /node_modules

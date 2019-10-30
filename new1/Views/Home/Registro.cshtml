@@ -20,6 +20,13 @@
         <span asp-validation-for="Sobrenome" class="text-danger"></span>
     </div>
 
+    
+    <div>
+        <label asp-for="NomeUsuario"></label>
+        <input asp-for="NomeUsuario" />
+        <span asp-validation-for="NomeUsuario" class="text-danger"></span>
+    </div>
+
     <div>
         <label asp-for="Idade"></label>
         <input asp-for="Idade" />
@@ -37,4 +44,6 @@
         <input asp-for="Senha" />
         <span asp-validation-for="Senha" class="text-danger"></span>
     </div>
+
+    <input type="submit" value="Registrar" />
 </form>

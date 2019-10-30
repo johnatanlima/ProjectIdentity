@@ -12,6 +12,10 @@ namespace new1.Models
         [DataType(DataType.Text)]
         public string Sobrenome { get; set; }
 
+        [Required(ErrorMessage="Esse campo é obrigatóri!")]
+        [DataType(DataType.Text)] 
+        public string NomeUsuario { get; set; }
+
         [Range(1, 120, ErrorMessage="O campo é apenas números!")]
         [StringLength(3, ErrorMessage="No máximo 3 caracteres!")]
         public int Idade { get; set; }
