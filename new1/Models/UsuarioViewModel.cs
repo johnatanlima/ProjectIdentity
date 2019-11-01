@@ -15,6 +15,9 @@ namespace new1.Models
         [Required(ErrorMessage="Esse campo é obrigatóri!")]
         [DataType(DataType.Text)] 
         public string NomeUsuario { get; set; }
+        
+        [Required(ErrorMessage="Este campo é obrigatório!")]
+        [Range(1,60)]
         public int Idade { get; set; }
 
         [DataType(DataType.EmailAddress, ErrorMessage="Informe uma expressao de email válida!")]

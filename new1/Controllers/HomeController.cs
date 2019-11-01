@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -38,7 +39,7 @@ namespace new1.Controllers
                 Nome = registro.Nome,
                 Sobrenome = registro.Sobrenome,
                 UserName = registro.NomeUsuario,
-                Idade = registro.Idade,
+                Idade = Convert.ToInt32(registro.Idade),
                 Email = registro.Email             
             };
             

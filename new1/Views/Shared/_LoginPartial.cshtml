@@ -2,11 +2,11 @@
 @inject SignInManager<Usuario> SignInManager
 @inject UserManager<Usuario> UserManager
 
-<ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
 {
+<ul class="nav navbar-nav navbar-nav-right">
     <li class="nav-item">
-        <a  class="nav-link text-dark" asp-area="Identity" asp-page="/Account/Manage/Index" title="Manage">Hello @User.Identity.Name!</a>
+        <a  class="nav-link text-dark" asp-controller="Home" asp-action="Index" title="Usuário">Bem vindo @User.Identity.Name!</a>
     </li>
     
     <li class="nav-item">
@@ -14,4 +14,17 @@
             <button  type="submit" class="nav-link btn btn-link text-dark">Logout</button>
         </form>
     </li>
+</ul>
+}
+else
+{
+<ul class="nav nav-bar nav-bar-right">
+    <li class="nav-item">
+        <a  class="nav-link text-dark" asp-controller="Home" asp-action="Registrar" title="Registrar"> Registrar</a>
+    </li>
+
+    <li class="nav-item">
+        <a  class="nav-link text-dark" asp-controller="Home" asp-action="Registrar" title="Login"> Login </a>
+    </li>
+</ul> 
 }
