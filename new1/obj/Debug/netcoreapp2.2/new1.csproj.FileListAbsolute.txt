@@ -31,3 +31,4 @@
 /home/userCentos/NetCore/ProjectIdentity/new1/obj/Debug/netcoreapp2.2/new1.dll
 /home/userCentos/NetCore/ProjectIdentity/new1/obj/Debug/netcoreapp2.2/new1.pdb
 /home/userCentos/NetCore/ProjectIdentity/new1/obj/Debug/netcoreapp2.2/new1.csproj.CopyComplete
+/home/userCentos/NetCore/ProjectIdentity/new1/obj/Debug/netcoreapp2.2/Razor/Views/Home/CriarNivelAcesso.g.cshtml.cs

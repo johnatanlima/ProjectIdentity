@@ -64,6 +64,18 @@ namespace new1.Controllers
             return RedirectToAction("Index", "Home");
         }
 
+        [HttpGet]
+        public IActionResult CriarNivelAcesso()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> CriarNivelAcesso(NivelAcesso nivelAcesso)
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
