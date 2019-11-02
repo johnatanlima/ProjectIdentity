@@ -11,11 +11,12 @@ namespace new1.Controllers
     {
         private readonly UserManager<Usuario> _gerenciaUsuarios;
         private readonly SignInManager<Usuario> _gerenciaLogins;
-
-        public HomeController(UserManager<Usuario> gerenciaUsuarios, SignInManager<Usuario> gerenciaLogins)
+        private readonly RoleManager<NivelAcesso> _gerenciaRoles;
+        public HomeController(UserManager<Usuario> gerenciaUsuarios, SignInManager<Usuario> gerenciaLogins, RoleManager<NivelAcesso> roleManager)
         {
             _gerenciaUsuarios = gerenciaUsuarios;
             _gerenciaLogins = gerenciaLogins;
+            _gerenciaRoles = roleManager;
         }
         public IActionResult Index()
         {
@@ -73,7 +74,19 @@ namespace new1.Controllers
         [HttpPost]
         public async Task<IActionResult> CriarNivelAcesso(NivelAcesso nivelAcesso)
         {
-            return View();
+            if(ModelState.IsValid)
+            {
+                bool roleExiste = await _gerenciaRoles.RoleExistsAsync(nivelAcesso.Name);
+
+                if(!roleExiste)
+                {
+                    await _gerenciaRoles.CreateAsync(nivelAcesso);
+                
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+            
+            return View(nivelAcesso);
         }
 
         public IActionResult Privacy()

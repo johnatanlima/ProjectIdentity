@@ -35,11 +35,13 @@ namespace new1
                 options.UseMySql(
                     Configuration.GetConnectionString("myConn")));
 
-            services.AddDefaultIdentity<Usuario>().AddEntityFrameworkStores<RegistroDbContext>();
+            services.AddIdentity<Usuario, NivelAcesso>().AddEntityFrameworkStores<RegistroDbContext>();
 
             //Por causa das DI que foram feitas no controller Home
             services.AddScoped<SignInManager<Usuario>,SignInManager<Usuario>>();
             services.AddScoped<UserManager<Usuario>,UserManager<Usuario>>();
+            services.AddScoped<RoleManager<NivelAcesso>, RoleManager<NivelAcesso>>();
+
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }

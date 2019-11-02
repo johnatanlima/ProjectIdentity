@@ -8,6 +8,8 @@ namespace new1.Data
     {
         public DbSet<Usuario> Usuarios {get; set;}
         
+        public DbSet<NivelAcesso> NivelAcessos {get; set;}
+        
         public RegistroDbContext(DbContextOptions<RegistroDbContext> options)
             : base(options)
         {
