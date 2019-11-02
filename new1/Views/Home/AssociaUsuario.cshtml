@@ -1,0 +1,20 @@
+@model new1.Models.UsuarioRoles
+
+@{
+    ViewData["Title"] = "Associa Usuário";
+}
+
+<h3> Atribuir permissões à usuários</h3>
+
+<form>
+  <div>
+      <label asp-for="UsuarioId"> </label>
+      <select asp-for="UsuarioId" asp-items="ViewBag.UsuarioId"></select>
+  </div>
+
+  <div>
+      <label asp-for="NivelAcessoId"> </label>
+      <select asp-for="NivelAcessoId" asp-items="ViewBag.NivelAcessoId"> </select>
+  </div>
+</form>
+
