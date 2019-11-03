@@ -6,7 +6,7 @@
 
 <h3> Atribuir permissões à usuários</h3>
 
-<form>
+<form asp-action="AssociaUsuario">
   <div>
       <label asp-for="UsuarioId"> </label>
       <select asp-for="UsuarioId" asp-items="ViewBag.UsuarioId"></select>
@@ -16,5 +16,7 @@
       <label asp-for="NivelAcessoId"> </label>
       <select asp-for="NivelAcessoId" asp-items="ViewBag.NivelAcessoId"> </select>
   </div>
+
+  <input type="submit" value="Adicionar" />
 </form>
 
